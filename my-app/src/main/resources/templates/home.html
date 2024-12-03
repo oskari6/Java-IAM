@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <h1>Welcome</h1>
+    <div th:if="${#authentication.principal}">
+      <p>
+        Signed in as: <span th:text="{#authentication.principal.name}"></span>
+      </p>
+    </div>
+    <div th:id="{!#authentication.principal}">
+      <a href="/oauth/authorization/google">Login with Google</a>
+    </div>
+  </body>
+</html>
