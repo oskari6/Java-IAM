@@ -1,0 +1,5 @@
+com\example\app\LoginController.class
+com\example\app\SecurityConfig.class
+com\example\app\User.class
+com\example\app\UserRepository.class
+com\example\app\App.class
