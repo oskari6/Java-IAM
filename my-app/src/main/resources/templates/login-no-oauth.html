@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <h1>Login</h1>
+    <div th:if="${#authentication.principal}"></div>
+    <div th:id="{!#authentication.principal}">
+      <input placeholder="name" />
+      <input placeholder="password" />
+      <a href="/login/oauth2/code/google">Login with Google</a>
+    </div>
+  </body>
+</html>
